@@ -1,21 +1,22 @@
 ---
 layout: default
 title: ""
-description: "Axel Ccasani — analista de datos e IA orientado a producto. Portfolio, proyectos personales y case studies."
+description: "Axel Ccasani — Product Manager. Portfolio, case studies y proyectos de producto con datos e IA."
 ---
 
 <section class="hero">
   <div class="hero-inner">
-    <p class="hero-eyebrow">Portfolio · Product Thinking · AI Analytics</p>
-    <h1>Construyo producto con datos, IA y<br>obsesión por el usuario.</h1>
+    <p class="hero-eyebrow">Portfolio · Product Manager · AI Builder</p>
+    <h1>Producto que parte del problema,<br>no de la tecnología.</h1>
     <p class="lead">
-      Analista de datos e IA con formación en Economía (U. del Pacífico). Diseño productos y automatizaciones que
-      resuelven problemas reales: agentes IA en salud, dashboards de métricas y case studies de producto de
-      principio a fin. Me muevo entre el dato, el prompting y la decisión de negocio.
+      Product Manager junior con background en Economía (U. del Pacífico). Hago producto con discovery, métricas y
+      iteración constante. He construido tres productos de principio a fin — un case study de plataforma universitaria,
+      un agentes IA para salud y un automatizador de gastos — combiniando product thinking, prompting y datos.
+      Busco mi primer rol formal de PM donde pueda aplicar lo que ya hago por instinto.
     </p>
     <div class="hero-cta">
       <a href="{{ '/cv/' | relative_url }}" class="btn btn-primary">Ver CV completo →</a>
-      <a href="{{ '/kayla/' | relative_url }}" class="btn btn-ghost">Leer case study: KAYLA</a>
+      <a href="{{ '/uplearn/' | relative_url }}" class="btn btn-ghost">Leer case study PM: UPLearn</a>
       <a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener" class="btn btn-ghost">GitHub</a>
     </div>
   </div>
@@ -24,40 +25,42 @@ description: "Axel Ccasani — analista de datos e IA orientado a producto. Port
 <section class="section">
   <div class="container">
     <div class="section-head">
-      <h2>Proyectos y case studies</h2>
-      <span class="link-small">3 proyectos · 2025–2026</span>
+      <h2>Case studies y proyectos</h2>
+      <span class="link-small">3 productos · 2025–2026</span>
     </div>
     <div class="cards-grid">
 
-      <a class="card" href="{{ '/kayla/' | relative_url }}">
-        <span class="card-tag">Case study · Salud · AI agents (roadmap)</span>
-        <h3>KAYLA</h3>
-        <p>Sistema de recordatorios automáticos de citas y medicamento para postas de salud. Google Form → Sheets →
-          Telegram bot, con dashboard en Streamlit y roadmap hacia agentes IA de voz.</p>
+      <a class="card" href="{{ '/uplearn/' | relative_url }}">
+        <span class="card-tag">Case study PM · Discovery + MVP</span>
+        <h3>UPLearn</h3>
+        <p>Plataforma para centralizar material académico, reseñas de profesores y tutorías peer-to-peer en la U. del
+          Pacífico. Discovery completo: stakeholders, empathy map, insights con cognitive load theory, MVP y modelo de
+          negocio. Mi case study PM central.</p>
         <div class="card-meta">
-          <span>Python · Streamlit · Telegram</span>
+          <span>Product · Discovery · MVP</span>
+          <span>→</span>
+        </div>
+      </a>
+
+      <a class="card" href="{{ '/kayla/' | relative_url }}">
+        <span class="card-tag">Producto 0→1 · Salud · Roadmap IA</span>
+        <h3>KAYLA</h3>
+        <p>Producto de recordatorios automáticos de citas para postas de salud. Empezó con la restricción
+          "los médicos ya usan Sheets y Telegram" — no con la tecnología. 5 entrevistas de discovery y un roadmap de
+          evolución hacia agentes IA.</p>
+        <div class="card-meta">
+          <span>0→1 · Pricing · Roadmap</span>
           <span>→</span>
         </div>
       </a>
 
       <a class="card" href="{{ '/gastosbot/' | relative_url }}">
-        <span class="card-tag">Proyecto personal · LLM · Automatización</span>
+        <span class="card-tag">Side project · LLM · Multi-user</span>
         <h3>GastosBot</h3>
-        <p>Automatización que lee correos bancarios vía Gmail API y usa prompting sobre un LLM (DeepSeek) para
-          extraer transacciones en lenguaje natural y registrarlas en Google Sheets, con dashboard en Streamlit.</p>
+        <p>Bot personal de gastos familiares con LLM en lenguaje natural. Dos fuentes de datos (email automática +
+          fallback manual), multi-user desde el día 1, costo ~$0.05/mes. Donde aprendí prompting en producción.</p>
         <div class="card-meta">
-          <span>Python · LLM · Prompting</span>
-          <span>→</span>
-        </div>
-      </a>
-
-      <a class="card" href="{{ '/uplearn/' | relative_url }}">
-        <span class="card-tag">Case study · Producto universitario · MVP</span>
-        <h3>UPLearn</h3>
-        <p>Plataforma para centralizar material académico, reseñas de profesores y tutorías peer-to-peer en la U. del
-          Pacífico. Case study completo con stakeholders, insights y modelo de negocio.</p>
-        <div class="card-meta">
-          <span>Product design · MVP · Figma</span>
+          <span>MVP · LLM · Funnel</span>
           <span>→</span>
         </div>
       </a>
@@ -72,28 +75,30 @@ description: "Axel Ccasani — analista de datos e IA orientado a producto. Port
     <div class="about-grid">
       <div class="about-text">
         <p>
-          Soy <strong>Axel Ccasani</strong>, estudiante de Economía en la Universidad del Pacífico (Lima). Mi foco es
-          <strong>producto con datos e IA</strong>: tomo decisiones con evidencia, construyo automatizaciones que la
-          gente realmente usa y me obsesiona medir lo que importa.
+          Soy <strong>Axel Ccasani</strong>, estudiante de Economía en la Universidad del Pacífico (Lima). No tengo
+          título formal de PM todavía — pero en los últimos 18 meses construí tres productos de principio a fin con
+          mentalidad PM: <strong>descubrí el problema antes que el código</strong>, validated demand con entrevistas,
+          diseñé MVPs con scope intencional, definí pricing y roadmap.
         </p>
         <p>
           He hecho prácticas en <strong>Nissan Perú</strong> (Finanzas) y <strong>Metso Perú</strong> (Cuentas por
-          Pagar), donde automaticé validaciones en Excel y detecté fugas de ingresos por análisis de datos. En paralelo
-          desarrollo proyectos personales de IA aplicada: PRODUCT thinking + prompting + dashboards.
+          Pagar), donde trabajé con stakeholders no técnicos, vendí ideas internas y automaticé procesos con
+          impacto medible. En paralelo construyo side projects de producto + IA, deployados y públicos.
         </p>
         <p>
-          Busco roles donde pueda combinar <strong>QA de IA</strong>, seguimiento de métricas de conversión, análisis
-          full-funnel y diseño de producto. Hablar contigo sobre tu operativa de IA es de lo que mejor se me da.
+          Mi north star: <strong>producto que el usuario realmente usa</strong>, no producto que se ve bien en demo.
+          Por eso todos mis case studies empiezan con el problema (entrevista, dato, observación) y terminan con
+          learnings operativos — no con autoelogio.
         </p>
       </div>
       <div class="about-side">
         <h4>Foco actual</h4>
         <ul>
-          <li><span>Analista de IA</span><span>rol objetivo</span></li>
-          <li><span>AI analytics</span><span>QA de agentes IA</span></li>
-          <li><span>Prompting</span><span>Claude · Gemini · ChatGPT</span></li>
-          <li><span>Funnel &amp; métricas</span><span>conversión</span></li>
-          <li><span>Dashboarding</span><span>Streamlit · Excel</span></li>
+          <li><span>Rol objetivo</span><span>Product Manager (jr)</span></li>
+          <li><span>Discovery</span><span>entrevistas · insights · empathy</span></li>
+          <li><span>MVP scoping</span><span>qué NO construir</span></li>
+          <li><span>Métricas</span><span>funnel · KPIs · retention</span></li>
+          <li><span>Stack técnico</span><span>Python · Streamlit · LLMs</span></li>
           <li><span>Idiomas</span><span>ES nativo · EN avanzado</span></li>
         </ul>
       </div>
