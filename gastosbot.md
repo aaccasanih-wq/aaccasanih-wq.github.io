@@ -69,12 +69,12 @@ El flujo manual vía Telegram acepta comandos en lenguaje natural — el LLM par
 
 Acepta **voz** además de texto (transcripción con Groq Whisper).
 
-<figure>
+<figure class="figure-small">
   <img src="{{ '/assets/img/gastosbot-config.png' | relative_url }}" alt="Configuración de usuarios en la hoja Config">
   <figcaption>Hoja <code>Config</code> del Sheet: una fila por usuario, con <code>chat_id</code>, nombre y sufijo de correo de reenvío.</figcaption>
 </figure>
 
-<figure>
+<figure class="figure-small">
   <img src="{{ '/assets/img/gastosbot-registros.png' | relative_url }}" alt="Hoja de registros">
   <figcaption>Hoja de registros por usuario — cada pestaña es una persona, con id, fecha, monto, medio, concepto y origen (email/telegram).</figcaption>
 </figure>

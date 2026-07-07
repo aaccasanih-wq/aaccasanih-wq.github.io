@@ -1,18 +1,13 @@
-title: Axel Ccasani — Portfolio &amp; CV
-description: Product-minded data &amp; AI analyst. CV, projects and case studies.
+title: "Axel Ccasani — Portfolio &amp; CV"
+description: "Product-minded data &amp; AI analyst. CV, projects and case studies."
 author: Axel Aaron Ccasani Huachua
 email: aaronaxel810@gmail.com
 baseurl: ""
 url: "https://aaccasanih-wq.github.io"
 github_username: aaccasanih-wq
-linkedin_username: ""
 location: Lima, Peru
 
 markdown: kramdown
-kramdown:
-  parse_block_html: true
-  syntax_highlighter: rouge
-
 permalink: pretty
 exclude:
   - README.md
@@ -21,6 +16,5 @@ exclude:
   - node_modules
   - vendor
   - .DS_Store
-
 sass:
   style: compressed

@@ -62,22 +62,22 @@ Building it me enseñó los problemas del día a día de un agente IA en producc
 4. El médico contacta al paciente y confirma la asistencia.
 5. El **dashboard en Streamlit** muestra el estado de todos los pacientes y recordatorios.
 
-<figure>
+<figure class="figure-small">
   <img src="{{ '/assets/img/kayla-form.png' | relative_url }}" alt="Google Form de registro de pacientes">
   <figcaption>1. El médico registra al paciente en un Google Form accesible desde el celular.</figcaption>
 </figure>
 
-<figure>
+<figure class="figure-small">
   <img src="{{ '/assets/img/kayla-sheet.png' | relative_url }}" alt="Google Sheets con base de pacientes">
   <figcaption>2. La base de pacientes se acumula en un Google Sheet (fuente única de verdad).</figcaption>
 </figure>
 
-<figure>
+<figure class="figure-small">
   <img src="{{ '/assets/img/kayla-telegram.png' | relative_url }}" alt="Mensaje de Telegram que recibe el médico">
   <figcaption>3. El médico recibe el recordatorio automáticamente en Telegram cada mañana.</figcaption>
 </figure>
 
-<figure>
+<figure class="figure-small">
   <img src="{{ '/assets/img/kayla-dashboard.png' | relative_url }}" alt="Dashboard en Streamlit">
   <figcaption>4. El dashboard de Streamlit monitorea en tiempo real el estado de todos los recordatorios y pacientes.</figcaption>
 </figure>
@@ -102,28 +102,6 @@ Aplicación concreta de IA en este roadmap:
 - **Prompting + RAG** para responder preguntas del paciente sobre su cita / medicamento.
 - **Arquitectura de agentes** que deciden si derivan al médico o resuelven solos.
 - **QA manual diario** sobre una muestra de conversaciones tal como se hace con cualquier agente IA en producción — la operativa por la que me postulo a AUNA.
-
-## Stack y herramientas
-
-| Capa | Tecnología | Justificación |
-|------|-----------|---------------|
-| Backend / Script | Python 3.11 | Ecosistema amplio y acceso rápido a APIs. |
-| Base de datos | Google Sheets | Los médicos ya lo usan; cero curva de aprendizaje. |
-| Ingesta de datos | `gspread` + Google Forms | Lectura/escritura de Sheets desde Python. |
-| Mensajería | Telegram Bot API (`python-telegram-bot`) | Gratis, robusto, fácil de configurar. |
-| Dashboard | Streamlit | Rápido de construir, desplegable gratis. |
-| Landing | HTML/CSS estático + GitHub Pages | Gratis, profesional. |
-| Scheduler | GitHub Actions | Gratis (500 min/mes), integrado al repo. |
-| Tests | pytest (24 tests), ruff (lint) | Calidad del flujo end-to-end. |
-| Asistencia de código | Claude Code | Co-founder de ingeniería virtual. |
-
-## Calidad y operativa (CI/CD + tests)
-
-- **Lint** con `ruff` en cada push y PR hacia `main`.
-- **Chequeo de sintaxis** con `python -m py_compile` sobre `backend/` y `frontend/`.
-- **24 tests automatizados**: filtrado por fechas, generación de recordatorios, E2E del flujo con mocks (Sheets → filtro → agrupado → Telegram, incluyendo routing por `chat_id` y modo *dry-run*), resolución de credenciales (env JSON, base64, archivo).
-
-Esto me aseguró poder iterar sin romper el flujo productivo — un cambio se mergea solo si pasa todos los tests.
 
 ## Validación en terreno
 
