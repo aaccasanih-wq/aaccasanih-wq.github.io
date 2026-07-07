@@ -1,0 +1,16 @@
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a href="{{ '/' | relative_url }}" class="brand">
+      <span class="brand-mark">A</span>
+      <span class="brand-name">Axel Ccasani</span>
+    </a>
+    <nav class="site-nav" aria-label="Principal">
+      <a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="active" aria-current="page"{% endif %}>Inicio</a>
+      <a href="{{ '/cv/' | relative_url }}" {% if page.url contains '/cv' %}class="active" aria-current="page"{% endif %}>CV</a>
+      <a href="{{ '/kayla/' | relative_url }}" {% if page.url contains '/kayla' %}class="active" aria-current="page"{% endif %}>KAYLA</a>
+      <a href="{{ '/gastosbot/' | relative_url }}" {% if page.url contains '/gastosbot' %}class="active" aria-current="page"{% endif %}>GastosBot</a>
+      <a href="{{ '/uplearn/' | relative_url }}" {% if page.url contains '/uplearn' %}class="active" aria-current="page"{% endif %}>UPLearn</a>
+    </nav>
+    <a href="mailto:{{ site.email }}" class="nav-cta">Contacto</a>
+  </div>
+</header>
